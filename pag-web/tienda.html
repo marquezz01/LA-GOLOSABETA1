@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda - Carnes La Golosa</title>
+  <meta name="description" content="Explora nuestra selección de cortes premium. Calidad y sabor directo a tu puerta." />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ======== HEADER ======== -->
+  <header class="main-header scrolled"> <!-- 'scrolled' para que tenga fondo desde el inicio -->
+    <div class="container">
+      <a href="index.html" class="logo">
+        La Golosa
+      </a>
+
+      <!-- Menú de Navegación para Escritorio -->
+      <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Botón Hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======== NAVEGACIÓN ======== -->
+  <div class="offcanvas-menu" id="side-menu">
+    <nav class="offcanvas-nav">
+        <div class="offcanvas-header">Menú</div>
+        <ul class="offcanvas-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <!-- Contenedor principal -->
+  <div id="page-container">
+    <main>
+      <!-- ======== TIENDA ======== -->
+      <section id="shop" class="section-padding" style="padding-top: 150px;"> <!-- Espacio extra arriba por el header fijo -->
+        <div class="container">
+          <h2 class="section-title text-center animate-on-scroll">Nuestra Tienda</h2>
+          <p class="text-center animate-on-scroll" style="max-width: 700px; margin-left: auto; margin-right: auto;">Calidad premium, directo a tu puerta. Explora nuestra selección de cortes y productos listos para llevar tu parrilla al siguiente nivel.</p>
+
+          <div class="shop-grid">
+            <!-- Shop Item 1 -->
+            <article class="shop-item animate-on-scroll">
+              <div class="shop-item-image">
+                <div class="image-placeholder">FOTO 1</div>
+                <span class="shop-item-tag">Más Vendido</span>
+              </div>
+              <div class="shop-item-content">
+                <h3>Bife de Chorizo (500g)</h3>
+                <p>Corte jugoso con un marmoleo perfecto, ideal para la parrilla.</p>
+                <div class="shop-item-footer">
+                  <span class="shop-item-price">$25.000</span>
+                  <a href="#" class="btn btn-primary">Añadir</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Shop Item 2 -->
+            <article class="shop-item animate-on-scroll delay-1">
+              <div class="shop-item-image">
+                <div class="image-placeholder">FOTO 2</div>
+              </div>
+              <div class="shop-item-content">
+                <h3>Punta de Anca (1kg)</h3>
+                <p>Corte magro con una capa de grasa que le da un sabor inigualable.</p>
+                <div class="shop-item-footer">
+                  <span class="shop-item-price">$45.000</span>
+                  <a href="#" class="btn btn-primary">Añadir</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Shop Item 3 -->
+            <article class="shop-item animate-on-scroll delay-2">
+              <div class="shop-item-image">
+                <div class="image-placeholder">FOTO 3</div>
+              </div>
+              <div class="shop-item-content">
+                <h3>Costillas BBQ (750g)</h3>
+                <p>Nuestras costillas de cerdo crudas son la base perfecta para tu receta de BBQ.</p>
+                <div class="shop-item-footer">
+                  <span class="shop-item-price">$35.000</span>
+                  <a href="#" class="btn btn-primary">Añadir</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Shop Item 4 -->
+            <article class="shop-item animate-on-scroll">
+              <div class="shop-item-image">
+                <div class="image-placeholder">FOTO 4</div>
+              </div>
+              <div class="shop-item-content">
+                <h3>Chorizo Argentino (Pack x4)</h3>
+                <p>Elaborado con nuestra receta tradicional, perfecto para picar o acompañar.</p>
+                <div class="shop-item-footer">
+                  <span class="shop-item-price">$18.000</span>
+                  <a href="#" class="btn btn-primary">Añadir</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Shop Item 5 -->
+            <article class="shop-item animate-on-scroll delay-1">
+              <div class="shop-item-image">
+                <div class="image-placeholder">FOTO 5</div>
+              </div>
+              <div class="shop-item-content">
+                <h3>Entraña (500g)</h3>
+                <p>Un corte delgado y de sabor intenso que se cocina en minutos.</p>
+                <div class="shop-item-footer">
+                  <span class="shop-item-price">$30.000</span>
+                  <a href="#" class="btn btn-primary">Añadir</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Shop Item 6 -->
+            <article class="shop-item animate-on-scroll delay-2">
+              <div class="shop-item-image">
+                <div class="image-placeholder">FOTO 6</div>
+              </div>
+              <div class="shop-item-content">
+                <h3>Asado de Tira (1kg)</h3>
+                <p>El corte rey de la parrilla, con el hueso que le da un sabor único.</p>
+                <div class="shop-item-footer">
+                  <span class="shop-item-price">$40.000</span>
+                  <a href="#" class="btn btn-primary">Añadir</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Shop Item 7 -->
+            <article class="shop-item animate-on-scroll">
+              <div class="shop-item-image">
+                <div class="image-placeholder">FOTO 7</div>
+              </div>
+              <div class="shop-item-content">
+                <h3>Morcilla (Pack x2)</h3>
+                <p>Nuestra morcilla artesanal, cremosa y perfecta para empezar el asado.</p>
+                <div class="shop-item-footer">
+                  <span class="shop-item-price">$12.000</span>
+                  <a href="#" class="btn btn-primary">Añadir</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Shop Item 8 -->
+            <article class="shop-item animate-on-scroll delay-1">
+              <div class="shop-item-image">
+                <div class="image-placeholder">FOTO 8</div>
+                <span class="shop-item-tag">Nuevo</span>
+              </div>
+              <div class="shop-item-content">
+                <h3>Provoleta (250g)</h3>
+                <p>Queso provolone para derretir en la parrilla con un toque de orégano.</p>
+                <div class="shop-item-footer">
+                  <span class="shop-item-price">$15.000</span>
+                  <a href="#" class="btn btn-primary">Añadir</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="main-footer-detailed">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-logo">La Golosa</h4>
+          <p>Pasión por la parrilla, compromiso con la calidad. Llevando los mejores cortes a tu mesa desde 2023.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <p>Calle Falsa 123, Ciudad<br>Email: <a href="mailto:info@lagolosa.com">info@lagolosa.com</a><br>Tel: +57 300 123 4567</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Carnes La Golosa. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ======== BOTONES FLOTANTES ======== -->
+  <div class="fab-container">
+    <a href="tienda.html" class="fab fab-secondary" aria-label="Ir a la Tienda">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+    </a>
+    <a href="https://wa.me/573001234567" target="_blank" class="fab fab-whatsapp" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.91-9.91zM17.23 14.25c-.2-.11-.72-.35-1.08-.44-.36-.09-.62-.15-.88.15-.26.3-.57.72-.7.87-.13.15-.26.17-.46.06-.2-.11-1.02-.38-1.95-1.2-1.13-1-1.61-1.82-1.7-2.04-.09-.22 0-.34.1-.44.09-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.57-1.36-.78-1.86-.2-.5-.4-.43-.55-.43h-.47c-.15 0-.38.04-.57.22-.19.18-.72.7-.72 1.71 0 1.01.74 1.98.84 2.13.1.15 1.45 2.2 3.51 3.1.5.24.9.38 1.21.48.5.17.95.14 1.3.09.4-.06 1.22-.5 1.39-.98.17-.48.17-.9.11-.98-.05-.09-.19-.14-.39-.25z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
